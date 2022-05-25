@@ -12,7 +12,7 @@ function myGameSetUp()
 	-- The :setCenter() call specifies that the sprite will be anchored at its center.
 	-- The :moveTo() call moves our sprite to the center of the display.
 
-	local playerImage = gfx.image.new("images/playerImage")
+	local playerImage = gfx.image.new("playerImage")
 	assert( playerImage ) -- make sure the image was where we thought
 
 	playerSprite = gfx.sprite.new( playerImage )
@@ -26,7 +26,7 @@ function myGameSetUp()
 	--       and call :setZIndex() with some low number so the background stays behind
 	--       your other sprites.
 
-	local backgroundImage = gfx.image.new( "images/background" )
+	local backgroundImage = gfx.image.new( "background" )
 	assert( backgroundImage )
 
 	gfx.sprite.setBackgroundDrawingCallback(
